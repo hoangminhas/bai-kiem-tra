@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nguyen Hoang Minh</title>
+</head>
+<body>
+<!--
+Cau 1:
+*Lenh hien thi hop thoai: alert();
+*Syntax:
+    alert("Minh");
+
+Cau 2:
+*Cau lenh nhan gia tri tu hop thoai: prompt();
+*Code:
+    let num = +prompt("Nhap so");
+    alert(num*num);
+
+Cau 3:
+*Lenh nhan gia tri tu input: document.getElementById("[id-input]").value;
+*Code:
+<body>
+<input id="input1" type="text">
+<input id="input2" type="text">
+<button type="submit" onclick=tinhToan()></button>
+<h1 id="kq"></h1>
+<script>
+    function tinhToan(){
+        let a = document.getElementById("input1").value;
+        let b = document.getElementById("input2").value;
+        let kq = document.getElementById("kq");
+        let S;
+        S = +a * +b;
+        kq.innerText = S;
+    }
+</script>
+</body>
+-->
+
+<!-- Cau 4 -->
+
+<p id="ketqua">Ket qua: </p>
+
+<script>
+    /*
+    let input = prompt("Nhap gia tri");
+    let ketqua = document.getElementById('ketqua');
+    ketqua.innerText = "Ket qua: " +input;   */
+
+    // a.
+    // let a = +prompt("Nhap a(cm)");
+    // let chuvi = a*4;
+    // let dientich = a*a;
+    // alert(chuvi);
+    // alert(dientich);
+    // alert(a);
+
+    // b.
+    // let num1 = +prompt("Nhap a");
+    // let num2 = +prompt("Nhap b");
+    // let num3 = Math.pow(a,b);
+    // alert(num1*num1);
+    // alert(num3);
+
+    // c.
+    // let a = +prompt("Nhap a");
+    // let b = +prompt("Nhap b");
+    // let sum = 0;
+    // for (a; a<= b; a++) {
+    //     sum+=a;
+    // }
+    // alert("Tong bang " +sum);
+
+    // d.
+    let a = +prompt("Nhap vao nam ");
+    let cen = a % 1000;
+    let kq = Math.floor(a / 100);
+    if (cen == 0){
+        alert("The ky "+kq);
+    } else {
+        kq +=1
+        alert("The ky " + kq);
+    }
+
+
+
+
+
+</script>
+</body>
+</html>
