@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra 21/12/21</title>
+</head>
+<body>
+<script>
+    function print100Num() {
+        for (let i=1; i<101; i++){
+            document.write(i + '<br>');
+        }
+    }
+
+    function print1ToX(x) {
+        for (let i=1; i<=x; i++){
+            document.write(i + '<br>');
+        }
+    }
+
+    function printSquare(x) {
+        alert(x*x);
+    }
+
+    function printMulti(x, y) {
+        alert(x*y);
+    }
+
+    function printSumOfArr(arr) {
+        let sum = 0;
+        for (let i=0; i<arr.length; i++){
+            sum += arr[i];
+        }
+        alert(sum);
+    }
+
+    function printEvenOfArr(arr) {
+        let evenArr = [];
+        for (let arrElement of arr) {
+            if (arrElement%2==0) {
+                evenArr.push(arrElement);
+            }
+        }
+        alert(evenArr);
+    }
+
+    function printIndexOfElement(arr, num) {
+        let index = arr.indexOf(num);
+        if (index <0) {
+            alert("Phan tu khong co trong mang");
+        } else {
+            alert("Phan tu nam o index so " + index);
+        }
+    }
+</script>
+</body>
+</html>
